@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nafisa Tahasin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #EFEDE6;
+      --ink: #1C2321;
+      --accent: #1F4B43;
+      --brass: #A8823C;
+      --divider: rgba(28, 35, 33, 0.18);
+      --status-bg: rgba(31, 75, 67, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0;
+      padding: 3.5rem 1.25rem 4rem;
+    }
+
+    h1, h2 {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    h1 { font-size: clamp(2.05rem, 4.7vw, 2.8rem); }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      margin-bottom: 1rem;
+    }
+
+    p { margin: 0; }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.07em;
+      text-underline-offset: 0.15em;
+      transition: color 140ms ease, text-decoration-thickness 140ms ease;
+    }
+
+    a:hover {
+      color: #163933;
+      text-decoration-thickness: 0.12em;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    section {
+      padding: 1.8rem 0;
+      border-top: 1px solid var(--divider);
+    }
+
+    section:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .hero-headline {
+      margin-top: 0.9rem;
+      font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+      font-weight: 500;
+      line-height: 1.5;
+      max-width: 64ch;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding: 0.35rem 0.65rem;
+      border: 1px solid rgba(31, 75, 67, 0.2);
+      background: var(--status-bg);
+      border-radius: 999px;
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.81rem;
+    }
+
+    .status-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1rem;
+      margin-top: 1.25rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .project-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-list li + li {
+      margin-top: 1.45rem;
+    }
+
+    .project-title {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 600;
+      font-size: 1.14rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.7rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.74rem;
+      background: rgba(168, 130, 60, 0.14);
+      border: 1px solid rgba(168, 130, 60, 0.45);
+      color: #6e5425;
+      padding: 0.18rem 0.48rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .bullet-list {
+      margin: 0;
+      padding-left: 1.2rem;
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .subline {
+      margin-top: 0.25rem;
+      margin-bottom: 0.9rem;
+      font-weight: 500;
+    }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      main { padding: 2.25rem 1rem 2.6rem; }
+      section { padding: 1.5rem 0; }
+      .status-pill { max-width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section aria-labelledby="hero-name">
+      <h1 id="hero-name">Nafisa Tahasin</h1>
+      <p>B.Tech Computer Science student, IIIT Jabalpur (graduating June 2027)</p>
+      <p class="hero-headline">B.Tech Computer Science student at IIIT Jabalpur, building retrieval-augmented agents, automated data pipelines, and the infrastructure to make them actually deployable — not just runnable on a laptop.</p>
+      <p class="hero-headline">"I build the systems behind the answer, not just the answer."</p>
+      <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>open source @ Meshery (Layer5) · currently building an MCP server</p>
+      <ul class="link-list" aria-label="Primary links">
+        <li><a href="mailto:nafisatahasin23@gmail.com">Email</a></li>
+        <li><a href="https://github.com/nafisa404">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/nafisa404/">LinkedIn</a></li>
+        <li><a href="https://leetcode.com/nafisa404/">LeetCode</a></li>
+        <li><a href="https://medium.com/@nafisa404">Medium</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="now-heading">
+      <h2 id="now-heading">Now</h2>
+      <p>I’m a Computer Science student at IIIT Jabalpur currently contributing to Meshery, the CNCF cloud-native platform, while independently building AI and data engineering projects across retrieval-augmented agents and ETL pipelines, with consistent focus on deployability and reliable infrastructure rather than one-off demos.</p>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <p class="project-title"><a href="https://github.com/nafisa404/QueryLens">QueryLens</a></p>
+          <p>A natural-language-to-SQL analytics agent with schema-aware retrieval and read-only SQL guardrails.</p>
+          <div class="tags" aria-label="QueryLens stack">
+            <span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Chroma</span><span class="tag">Streamlit</span><span class="tag">PostgreSQL</span>
+          </div>
+        </li>
+        <li>
+          <p class="project-title"><a href="https://github.com/nafisa404/PulseETL">PulseETL</a></p>
+          <p>An automated ETL pipeline with an LLM data-quality agent and dbt-tested transformations.</p>
+          <div class="tags" aria-label="PulseETL stack">
+            <span class="tag">Airflow</span><span class="tag">dbt</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
+          </div>
+        </li>
+        <li>
+          <p class="project-title"><a href="https://github.com/nafisa404/Codebase-Intelligence-RAG-">Codebase Intelligence Assistant</a></p>
+          <p>A RAG-based developer Q&amp;A assistant over a codebase, exposed through a REST API.</p>
+          <div class="tags" aria-label="Codebase Intelligence Assistant stack">
+            <span class="tag">Python</span><span class="tag">REST APIs</span><span class="tag">Vector search</span>
+          </div>
+        </li>
+        <li>
+          <p class="project-title"><a href="https://github.com/nafisa404/EchoMind-AI-Powered-Emotion-Stress-Detector-from-Voice">EchoMind</a></p>
+          <p>Vocal state estimation from speech (calm/stressed/anxious/confident/tired), comparing classic features against CNNs on mel-spectrograms with cross-dataset generalization tests.</p>
+          <div class="tags" aria-label="EchoMind stack">
+            <span class="tag">PyTorch</span><span class="tag">librosa</span><span class="tag">scikit-learn</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="opensource-heading">
+      <h2 id="opensource-heading">Open source</h2>
+      <p class="subline">Open Source Software Developer, Meshery (Layer5), May 2026–present</p>
+      <ul class="bullet-list">
+        <li>Merged 5+ PRs shipping React/TypeScript features.</li>
+        <li>Rewrote setup documentation flagged as unclear by new contributors.</li>
+        <li>Building an MCP server to expose Meshery data to AI assistants.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="achievements-heading">
+      <h2 id="achievements-heading">Achievements</h2>
+      <ul class="bullet-list">
+        <li>Selected for the IBM Maitreyee Program.</li>
+        <li>Open source contributor at Meshery (CNCF), OSCI, and GirlScript.</li>
+        <li>Hacktoberfest badge recipient.</li>
+        <li>Meshery Beta Tester.</li>
+        <li>Solved 500+ LeetCode/Codeforces/CodeChef problems.</li>
+        <li>Completed SAP Joule Agents training.</li>
+        <li>Certifications: AWS Cloud Essentials, IBM Data Science, Google Generative AI badge.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Jabalpur, India · <a href="mailto:nafisatahasin23@gmail.com">nafisatahasin23@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
